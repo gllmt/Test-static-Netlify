@@ -1,0 +1,116 @@
+/*
+  You can use import statements to include partials:
+ */
+
+@import "imports/reset.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+/*
+  Or add your statements here:
+ */
+html{
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZ9JREFUeNrsmGFrgzAQhtO0FlmgFUQ/rtD//6PGPuyDUuZkgaLdurtxllSNs50xN9gLh7Sl+nB5DXlvIe5UmqYBXNZQqudnDVVlWVbfc+/FjSAhXCKoDVQw4i8IVUIVAHicFApgsBuJpStjhd3LAU7/CgpglgQTi+l0ILiPm6HIM49QoZheuJTPNs8tB7yzJyO70Aq9qZR611qffoSiDu1twBNKQm0B7A3APq1Q5KGdww71gQGXKgHsbH5pKnHkoSGF9FzRgaLXPhZ+FNPzO51KhF8lV1D0tinPUIo4Lp2KBA9FJtSGCdQ3h6R9KWACFSCPnHFPGqu1ZGDwjuGlYKh/qD8PpZkxaYSqmEFVko6kNROgGnkaT5VMoErT6AUTqOICRUHRt+F1E1jNLSH3DJV3ggMc3Gs4wOPnBw9AB+jSq23zzCkozqlje5WuIhbGHAyIdAKcY7fH6P4EXToNhlEMhgS2dQzWAFWjYjtGaUyudNZaOVqyXiAxFM2pYyUNQaY0P05dXtpLNmrq0orzfOZTlmkMj0meBdDZzPNLgAEA+sqYP8y0U2cAAAAASUVORK5CYII='), auto;
+ }
+body {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+}
+h1{
+  margin: auto;
+  width: 50%;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+a {
+  cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAc9JREFUeNrMmLFuwjAQho2bAYmoIhEKDAxZkRgY+gJ9pD5J3yh9gQ4gVYIxEgwQMWRIJFQx9BxdkMFxY4JJ7pesDJC7L+ezfecea6ggCPrwEGNY8XMK45QkyamJ7d6dIC48JjBGCFQnAXWEsQfAzCoUwIhohJqomEpELwa49CEogHEQZsrsaYdwZ90feE3OLEyB1uv1pyGUsLdA++ZQmDtvMFzTz/d9f3FHtAr76KceSoqQw54rRxcxXpFD8xaAZLA5+tVGKrxnyizJRb8qFC77KetGU/SvRCpk3Sq8gsJVMOwYaliuxjJSE0ZDExlqRASq4ODSaU9BfcHDCQFdwDiBBFcSnjOCch447Zmtd2ez2ce/UNvtdtXEsKgSmr6rFHmQ7aGN3fxwOHyNx+N3C0wxxzKVklKOxT0lnTi2QVTAiras3BKORKCO8tm3JwK1v0Bho9h1wqdlwyrv6HHHULFSeWLnuusIaCd3zryCNmsZKLudpSsobKV/YJxbAir83bbwSpWA+9ayBTBhf1l1XVRZuuAq+H7iVBb2dddDL7q38jw/DwaDBMFf67x4nreKoshkvxOLaQNAv9oqweSzSN1PaW5jaNzkaQCfduf5J8AAokqjTt/IkNwAAAAASUVORK5CYII='), auto;
+}
+a:hover{
+  cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAc9JREFUeNrMmLFuwjAQho2bAYmoIhEKDAxZkRgY+gJ9pD5J3yh9gQ4gVYIxEgwQMWRIJFQx9BxdkMFxY4JJ7pesDJC7L+ezfecea6ggCPrwEGNY8XMK45QkyamJ7d6dIC48JjBGCFQnAXWEsQfAzCoUwIhohJqomEpELwa49CEogHEQZsrsaYdwZ90feE3OLEyB1uv1pyGUsLdA++ZQmDtvMFzTz/d9f3FHtAr76KceSoqQw54rRxcxXpFD8xaAZLA5+tVGKrxnyizJRb8qFC77KetGU/SvRCpk3Sq8gsJVMOwYaliuxjJSE0ZDExlqRASq4ODSaU9BfcHDCQFdwDiBBFcSnjOCch447Zmtd2ez2ce/UNvtdtXEsKgSmr6rFHmQ7aGN3fxwOHyNx+N3C0wxxzKVklKOxT0lnTi2QVTAiras3BKORKCO8tm3JwK1v0Bho9h1wqdlwyrv6HHHULFSeWLnuusIaCd3zryCNmsZKLudpSsobKV/YJxbAir83bbwSpWA+9ayBTBhf1l1XVRZuuAq+H7iVBb2dddDL7q38jw/DwaDBMFf67x4nreKoshkvxOLaQNAv9oqweSzSN1PaW5jaNzkaQCfduf5J8AAokqjTt/IkNwAAAAASUVORK5CYII='), auto;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  width: 80vw;
+  height: 100vh;
+}
+
+/* testing moving span mouve see app.js */
+.box {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+.spinner::before, .spinner::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+          animation: sk-bounce 2.0s infinite ease-in-out;
+}
+.spinner::after {
+  -webkit-animation-delay: -1.0s;
+          animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
